@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    width: 100%;
+    overflow-x: hidden;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+ul {
+    list-style: none;
+    height: 60px;
+}
+
+ul li {
+    display: inline-flex;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    text-align: center;
+    letter-spacing: .1em;
+}
+
+ul li:hover {
+    color: #20c997;
+    cursor: pointer;
+}
+
+ul li a {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+}
+
+ul li a:hover {
+    color: #20c997;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+main h2 {
+    margin-bottom: 16px;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+main img {
+    width: 100%;
+    height: 100%;
+    filter: grayscale(1);
+    transition: .3s all ease;
+}
+
+main img:hover {
+    filter: brightness(40%);
+    transform: scale(101%);
+}
+
+main a {
+    border: 2px solid white;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 24px;
+    padding-right: 24px;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-size: 11px;
+}
+
+main a:hover {
+    background-color: white;
+    color: black;
+}
+
+main div div div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+footer {
+    text-align: center;
+    line-height: 1.7;
+    color: #777;
+    font-weight: 300;
+    font-size: 1rem;
+    margin-bottom: 40px;
+}
+
+footer a {
+    text-transform: uppercase;
+    line-height: 1.7;
+    color: #777;
+    font-weight: 300;
+    font-size: 1rem;
+    transition: .3s all ease;
+}
+
+footer a:hover {
+    color: #20c997;
+}
+
+svg {
+    fill: grey;
+    padding-right: 16px;
+    transition: all .1s ease-in-out;
+}
+
+svg:hover {
+    fill: white;
+    cursor: pointer;
+}
+
+#Logo {
+    font-size: 32px;
+}
+
+#Gallery-Menu {
+    position: relative;
+}
+
+#Gallery-Menu:hover {
+    color: #20c997;
+    cursor: pointer;
+}
+
+#Gallery-Menu:hover #DropList {
+    opacity: 1;
+    z-index: 99;
+}
+
+#DropList {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    transition: .3s;
+    opacity: 0;
+    z-index: -99;
+    margin-top: 2.4vh;
+    left: 0px;
+    border-top: 2px solid #20c997;
+}
+
+#DropList li {
+    font-size: 16px;
+    text-transform:capitalize;
+    width: 200px;
+    height: 45px;
+    color: black;
+    background-color: white;
+    height: 4vh;
+    text-align: left;
+    padding: 9px 20px;
+}
+
+#DropList li:hover {
+    background: #f4f5f9;
+}
+
+#SubMenu {
+    position: relative;
+}
+
+#Sub-DropList {
+    border-top: 2px solid #20c997;
+    position: absolute;
+    left: 200px;
+    top: 0;
+    opacity: 0;
+    transition: .3s;
+}
+
+#SubMenu:hover #Sub-DropList {
+    opacity: 1;
+    z-index: 99;
+}
+
+.Photos {
+    position: relative;
+    overflow: hidden;
+    width: 600px;
+    height: 616px;
+}

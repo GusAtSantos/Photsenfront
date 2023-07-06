@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    width: 100%;
+    overflow-x: hidden;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+ul {
+    list-style: none;
+    height: 60px;
+}
+
+ul li {
+    display: inline-flex;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    text-align: center;
+    letter-spacing: .1em;
+}
+
+ul li:hover {
+    color: #20c997;
+    cursor: pointer;
+}
+
+ul li a {
+    color: #20c997;
+}
+
+ul li a:hover {
+    color: #20c997;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+header ul li a {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+}
+
+footer {
+    text-align: center;
+    line-height: 1.7;
+    color: #777;
+    font-weight: 300;
+    font-size: 1rem;
+    margin-bottom: 40px;
+}
+
+footer a {
+    text-transform: uppercase;
+    line-height: 1.7;
+    color: #777;
+    font-weight: 300;
+    font-size: 1rem;
+    transition: .3s all ease;
+}
+
+footer a:hover {
+    color: #20c997;
+}
+
+main {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+main section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 48px;
+}
+
+main img {
+    margin-right: 210px;
+    padding-right: 15px;
+    filter: grayscale(1);
+    transition: .2s all ease;
+}
+
+main img:hover {
+    filter: grayscale(0);
+    transform: scale(101%);
+}
+
+main .container img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 24px;
+}
+
+h2 {
+    font-size: 64px;
+    text-align: center;
+    padding-bottom: 56px;
+}
+
+p {
+    margin-bottom: 16px;
+    color: #777;
+    line-height: 30px;
+}
+
+h3 {
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+svg {
+    fill: grey;
+    padding-right: 16px;
+    transition: all .1s ease-in-out;
+}
+
+svg:hover {
+    fill: white;
+    cursor: pointer;
+}
+
+#Logo {
+    font-size: 32px;
+}
+
+#Gallery-Menu {
+    position: relative;
+}
+
+#Gallery-Menu:hover {
+    color: #20c997;
+    cursor: pointer;
+}
+
+#Gallery-Menu:hover #DropList {
+    opacity: 1;
+    z-index: 99;
+}
+
+#DropList {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    transition: .3s;
+    opacity: 0;
+    z-index: -99;
+    margin-top: 2.4vh;
+    left: 0px;
+    border-top: 2px solid #20c997;
+}
+
+#DropList li {
+    font-size: 16px;
+    text-transform:capitalize;
+    width: 200px;
+    height: 45px;
+    color: black;
+    background-color: white;
+    height: 4vh;
+    text-align: left;
+    padding: 9px 20px;
+}
+
+#DropList li:hover {
+    background: #f4f5f9;
+}
+
+#SubMenu {
+    position: relative;
+}
+
+#Sub-DropList {
+    border-top: 2px solid #20c997;
+    position: absolute;
+    left: 200px;
+    top: 0;
+    opacity: 0;
+    transition: .3s;
+}
+
+#SubMenu:hover #Sub-DropList {
+    opacity: 1;
+    z-index: 99;
+}
+
+#Mission {
+    padding: 0px 15px;
+    margin-left: 160px;
+}
+
+.container {
+    display: flex;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.container div {
+    text-align: center;
+    width: 630px;
+    height: 530px;
+    margin-bottom: 48px;
+    padding: 0px 15px;
+}
+
+.container div ul li a {
+    padding: 0px 16px;
+    transition: all .2s;
+}
+
+.container div ul li:hover {
+    filter: brightness(70%);
+}
+
+.container div h2 {
+    padding: 0px;
+    margin-bottom: 24px;
+    font-size: 32px;
+    color: black;
+}
